@@ -1,0 +1,32 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+ 
+<body background="background.jpg">
+    <div class="container">
+    <center>
+        <a href="" id="lins" download="yourselfie.jpg"></a>
+        <h1>Voice selfie app    <img src="selfie.jpeg" id="logo_img"></h1> 
+        <hr>
+        <h2>Say "take a selfie"</h2>
+        <textarea  id="textbox" readonly="true" class="form-control"></textarea>
+        <h5>Press start to record</h5><br>
+        <button id="start-btn" class="btn btn-danger" onclick="st()">Start</button><br><br>
+        <label>Your webcam:</label>
+        <div id="camera"></div><br>
+        <label>Your captured view:</label><br>
+        <div id="result"></div>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
